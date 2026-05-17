@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer of Management POR Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-[#6366F1] text-white px-6 py-4 flex justify-between items-center shadow-md">
+        <div class="flex items-center space-x-3">
+            <div class="text-2xl font-bold tracking-wider border-2 border-white px-2 py-0.5 rounded">itc</div>
+            <span class="text-sm font-medium text-indigo-100 hidden sm:inline">Institute Technical Council</span>
+        </div>
+        <div class="flex items-center space-x-6 text-sm font-medium">
+            <button class="hover:text-indigo-200"><i class="fa-solid fa-moon"></i></button>
+            <a href="#" class="hover:text-indigo-200">Home</a>
+            <div class="relative group cursor-pointer">
+                <span class="hover:text-indigo-200">My Domains <i class="fa-solid fa-chevron-down text-xs"></i></span>
+            </div>
+            <button class="bg-indigo-700 hover:bg-indigo-800 px-3 py-1.5 rounded transition">Logout</button>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-8">
+        
+        <div id="dashboardView">
+            <div class="flex space-x-2 mb-8 border-b border-gray-200 pb-3">
+                <button class="bg-[#6366F1] text-white px-4 py-1.5 rounded-md text-sm font-medium shadow">Projects</button>
+                <button class="bg-white text-gray-600 hover:bg-gray-100 px-4 py-1.5 rounded-md text-sm font-medium border border-gray-300">Wishlist</button>
+                <button class="bg-white text-gray-600 hover:bg-gray-100 px-4 py-1.5 rounded-md text-sm font-medium border border-gray-300">Preferences</button>
+            </div>
+
+            <div class="flex flex-wrap gap-2 justify-center max-w-4xl mx-auto mb-6">
+                <button class="bg-[#6366F1] text-white px-3 py-1 rounded-full text-xs font-semibold">ALL</button>
+                <button class="bg-white text-gray-600 border border-gray-300 px-3 py-1 rounded-full text-xs font-medium hover:bg-gray-50">Theory of Management POR</button>
+                <button class="bg-white text-gray-600 border border-gray-300 px-3 py-1 rounded-full text-xs font-medium hover:bg-gray-50">Absolute Brainrot & Ragebait</button>
+                <button class="bg-white text-gray-600 border border-gray-300 px-3 py-1 rounded-full text-xs font-medium hover:bg-gray-50">Core Memes</button>
+                <button class="bg-white text-gray-600 border border-gray-300 px-3 py-1 rounded-full text-xs font-medium hover:bg-gray-50">QuantPaglu's</button>
+                <button class="bg-white text-gray-600 border border-gray-300 px-3 py-1 rounded-full text-xs font-medium hover:bg-gray-50">Beloved Nemesis Lore</button>
+            </div>
+
+            <div class="max-w-md mx-auto mb-12">
+                <input type="text" placeholder="Search by title..." class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm shadow-sm">
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                
+                <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden p-6 flex flex-col justify-between hover:shadow-lg transition cursor-pointer" onclick="openProject('067')">
+                    <div class="flex flex-col items-center">
+                        <div class="w-48 h-56 bg-gradient-to-br from-slate-900 via-purple-950 to-indigo-950 rounded-lg flex flex-col justify-between p-4 text-white text-center shadow mb-4 relative overflow-hidden">
+                            <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+                            <span class="text-[10px] tracking-widest text-purple-400 font-bold">SUMMER OF VIVAAN</span>
+                            <div class="my-auto">
+                                <h3 class="text-sm font-black tracking-tight leading-tight text-purple-300">THE TALE OF DESTINY</h3>
+                                <p class="text-[8px] mt-1 text-gray-400">Kalman Filter & RL</p>
+                            </div>
+                            <span class="text-[8px] text-purple-500 font-mono">ID: 067</span>
+                        </div>
+                        <div class="w-full text-left">
+                            <p class="text-xs text-gray-400 font-mono mb-1">Project ID: 067</p>
+                            <h4 class="text-sm font-bold text-gray-800 line-clamp-2 mb-4">The Tale of Destiny using kalman filter and reinforcement learning...</h4>
+                        </div>
+                    </div>
+                    <button class="w-full bg-[#6366F1] text-white py-2 rounded-lg font-medium text-sm flex items-center justify-center space-x-2 hover:bg-indigo-700 transition">
+                        <i class="fa-solid fa-plus text-xs"></i> <span>Add To Wishlist</span>
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden p-6 flex flex-col justify-between hover:shadow-lg transition cursor-pointer" onclick="openProject('069')">
+                    <div class="flex flex-col items-center">
+                        <div class="w-48 h-56 bg-gradient-to-br from-amber-950 via-red-950 to-zinc-900 rounded-lg flex flex-col justify-between p-4 text-white text-center shadow mb-4 relative overflow-hidden">
+                            <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+                            <span class="text-[10px] tracking-widest text-red-400 font-bold">SUMMER OF VIVAAN</span>
+                            <div class="my-auto">
+                                <h3 class="text-sm font-black tracking-tight leading-tight text-red-300">BHAIYA PLEASE MAKE ME CR</h3>
+                                <p class="text-[8px] mt-1 text-gray-400">Basic Ass Edition</p>
+                            </div>
+                            <span class="text-[8px] text-red-500 font-mono">ID: 069</span>
+                        </div>
+                        <div class="w-full text-left">
+                            <p class="text-xs text-gray-400 font-mono mb-1">Project ID: 069</p>
+                            <h4 class="text-sm font-bold text-gray-800 line-clamp-2 mb-4">Bhaiya Please Make Me CR (BASIC ASS)</h4>
+                        </div>
+                    </div>
+                    <button class="w-full bg-[#6366F1] text-white py-2 rounded-lg font-medium text-sm flex items-center justify-center space-x-2 hover:bg-indigo-700 transition">
+                        <i class="fa-solid fa-plus text-xs"></i> <span>Add To Wishlist</span>
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden p-6 flex flex-col justify-between hover:shadow-lg transition cursor-pointer" onclick="openProject('003')">
+                    <div class="flex flex-col items-center">
+                        <div class="w-48 h-56 bg-gradient-to-br from-neutral-900 via-slate-950 to-indigo-950 rounded-lg flex flex-col justify-between p-4 text-white text-center shadow mb-4 relative overflow-hidden">
+                            <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+                            <span class="text-[10px] tracking-widest text-indigo-400 font-bold">SUMMER OF VIVAAN</span>
+                            <div class="my-auto">
+                                <h3 class="text-sm font-black tracking-tight leading-tight text-indigo-300">THE GREAT VIVAAN</h3>
+                                <p class="text-[8px] mt-1 text-gray-400">Beloved Nemesis Edition</p>
+                            </div>
+                            <span class="text-[8px] text-indigo-500 font-mono">ID: 003</span>
+                        </div>
+                        <div class="w-full text-left">
+                            <p class="text-xs text-gray-400 font-mono mb-1">Project ID: 003</p>
+                            <h4 class="text-sm font-bold text-gray-800 line-clamp-2 mb-4">To my beloved nemesis, Happy Birthday.</h4>
+                        </div>
+                    </div>
+                    <button class="w-full bg-[#6366F1] text-white py-2 rounded-lg font-medium text-sm flex items-center justify-center space-x-2 hover:bg-indigo-700 transition">
+                        <i class="fa-solid fa-plus text-xs"></i> <span>Add To Wishlist</span>
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden p-6 flex flex-col justify-between hover:shadow-lg transition cursor-pointer" onclick="openProject('004')"><div class="flex flex-col items-center"><div class="w-48 h-56 bg-gradient-to-br from-teal-900 to-emerald-950 rounded-lg flex flex-col justify-between p-4 text-white text-center shadow mb-4 relative overflow-hidden"><span class="text-[10px] tracking-widest text-emerald-400 font-bold">SUMMER OF VIVAAN</span><h3 class="text-xl font-black text-emerald-300 my-auto">PROJECT 4</h3><span class="text-[8px] text-emerald-500 font-mono">ID: 004</span></div><div class="w-full text-left"><p class="text-xs text-gray-400 font-mono mb-1">Project ID: 004</p><h4 class="text-sm font-bold text-gray-800 line-clamp-2 mb-4">Awaiting Project 4 Information...</h4></div></div><button class="w-full bg-[#6366F1] text-white py-2 rounded-lg font-medium text-sm flex items-center justify-center space-x-2 hover:bg-indigo-700 transition"><i class="fa-solid fa-plus text-xs"></i> <span>Add To Wishlist</span></button></div>
+                <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden p-6 flex flex-col justify-between hover:shadow-lg transition cursor-pointer" onclick="openProject('005')"><div class="flex flex-col items-center"><div class="w-48 h-56 bg-gradient-to-br from-orange-950 to-stone-900 rounded-lg flex flex-col justify-between p-4 text-white text-center shadow mb-4 relative overflow-hidden"><span class="text-[10px] tracking-widest text-orange-400 font-bold">SUMMER OF VIVAAN</span><h3 class="text-xl font-black text-orange-300 my-auto">PROJECT 5</h3><span class="text-[8px] text-orange-500 font-mono">ID: 005</span></div><div class="w-full text-left"><p class="text-xs text-gray-400 font-mono mb-1">Project ID: 005</p><h4 class="text-sm font-bold text-gray-800 line-clamp-2 mb-4">Awaiting Project 5 Information...</h4></div></div><button class="w-full bg-[#6366F1] text-white py-2 rounded-lg font-medium text-sm flex items-center justify-center space-x-2 hover:bg-indigo-700 transition"><i class="fa-solid fa-plus text-xs"></i> <span>Add To Wishlist</span></button></div>
+                <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden p-6 flex flex-col justify-between hover:shadow-lg transition cursor-pointer" onclick="openProject('006')"><div class="flex flex-col items-center"><div class="w-48 h-56 bg-gradient-to-br from-fuchsia-950 to-slate-900 rounded-lg flex flex-col justify-between p-4 text-white text-center shadow mb-4 relative overflow-hidden"><span class="text-[10px] tracking-widest text-fuchsia-400 font-bold">SUMMER OF VIVAAN</span><h3 class="text-xl font-black text-fuchsia-300 my-auto">PROJECT 6</h3><span class="text-[8px] text-fuchsia-500 font-mono">ID: 006</span></div><div class="w-full text-left"><p class="text-xs text-gray-400 font-mono mb-1">Project ID: 006</p><h4 class="text-sm font-bold text-gray-800 line-clamp-2 mb-4">Awaiting Project 6 Information...</h4></div></div><button class="w-full bg-[#6366F1] text-white py-2 rounded-lg font-medium text-sm flex items-center justify-center space-x-2 hover:bg-indigo-700 transition"><i class="fa-solid fa-plus text-xs"></i> <span>Add To Wishlist</span></button></div>
+                <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden p-6 flex flex-col justify-between hover:shadow-lg transition cursor-pointer" onclick="openProject('007')"><div class="flex flex-col items-center"><div class="w-48 h-56 bg-gradient-to-br from-violet-950 to-stone-900 rounded-lg flex flex-col justify-between p-4 text-white text-center shadow mb-4 relative overflow-hidden"><span class="text-[10px] tracking-widest text-violet-400 font-bold">SUMMER OF VIVAAN</span><h3 class="text-xl font-black text-violet-300 my-auto">PROJECT 7</h3><span class="text-[8px] text-violet-500 font-mono">ID: 007</span></div><div class="w-full text-left"><p class="text-xs text-gray-400 font-mono mb-1">Project ID: 007</p><h4 class="text-sm font-bold text-gray-800 line-clamp-2 mb-4">Awaiting Project 7 Information...</h4></div></div><button class="w-full bg-[#6366F1] text-white py-2 rounded-lg font-medium text-sm flex items-center justify-center space-x-2 hover:bg-indigo-700 transition"><i class="fa-solid fa-plus text-xs"></i> <span>Add To Wishlist</span></button></div>
+                <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden p-6 flex flex-col justify-between hover:shadow-lg transition cursor-pointer" onclick="openProject('008')"><div class="flex flex-col items-center"><div class="w-48 h-56 bg-gradient-to-br from-emerald-950 to-neutral-900 rounded-lg flex flex-col justify-between p-4 text-white text-center shadow mb-4 relative overflow-hidden"><span class="text-[10px] tracking-widest text-emerald-400 font-bold">SUMMER OF VIVAAN</span><h3 class="text-xl font-black text-emerald-300 my-auto">PROJECT 8</h3><span class="text-[8px] text-emerald-500 font-mono">ID: 008</span></div><div class="w-full text-left"><p class="text-xs text-gray-400 font-mono mb-1">Project ID: 008</p><h4 class="text-sm font-bold text-gray-800 line-clamp-2 mb-4">Awaiting Project 8 Information...</h4></div></div><button class="w-full bg-[#6366F1] text-white py-2 rounded-lg font-medium text-sm flex items-center justify-center space-x-2 hover:bg-indigo-700 transition"><i class="fa-solid fa-plus text-xs"></i> <span>Add To Wishlist</span></button></div>
+                <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden p-6 flex flex-col justify-between hover:shadow-lg transition cursor-pointer" onclick="openProject('009')"><div class="flex flex-col items-center"><div class="w-48 h-56 bg-gradient-to-br from-rose-950 to-zinc-900 rounded-lg flex flex-col justify-between p-4 text-white text-center shadow mb-4 relative overflow-hidden"><span class="text-[10px] tracking-widest text-rose-400 font-bold">SUMMER OF VIVAAN</span><h3 class="text-xl font-black text-rose-300 my-auto">PROJECT 9</h3><span class="text-[8px] text-rose-500 font-mono">ID: 009</span></div><div class="w-full text-left"><p class="text-xs text-gray-400 font-mono mb-1">Project ID: 009</p><h4 class="text-sm font-bold text-gray-800 line-clamp-2 mb-4">Awaiting Project 9 Information...</h4></div></div><button class="w-full bg-[#6366F1] text-white py-2 rounded-lg font-medium text-sm flex items-center justify-center space-x-2 hover:bg-indigo-700 transition"><i class="fa-solid fa-plus text-xs"></i> <span>Add To Wishlist</span></button></div>
+                <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden p-6 flex flex-col justify-between hover:shadow-lg transition cursor-pointer" onclick="openProject('010')"><div class="flex flex-col items-center"><div class="w-48 h-56 bg-gradient-to-br from-blue-950 to-slate-900 rounded-lg flex flex-col justify-between p-4 text-white text-center shadow mb-4 relative overflow-hidden"><span class="text-[10px] tracking-widest text-indigo-400 font-bold">SUMMER OF VIVAAN</span><h3 class="text-xl font-black text-indigo-300 my-auto">PROJECT 10</h3><span class="text-[8px] text-indigo-500 font-mono">ID: 010</span></div><div class="w-full text-left"><p class="text-xs text-gray-400 font-mono mb-1">Project ID: 010</p><h4 class="text-sm font-bold text-gray-800 line-clamp-2 mb-4">Awaiting Project 10 Information...</h4></div></div><button class="w-full bg-[#6366F1] text-white py-2 rounded-lg font-medium text-sm flex items-center justify-center space-x-2 hover:bg-indigo-700 transition"><i class="fa-solid fa-plus text-xs"></i> <span>Add To Wishlist</span></button></div>
+
+            </div>
+        </div>
+
+        <div id="projectDetailView" class="hidden max-w-5xl mx-auto bg-white rounded-2xl shadow-xl border border-gray-100 p-8 relative">
+            
+            <button onclick="closeProject()" class="absolute top-6 right-6 text-gray-400 hover:text-gray-600 text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <h2 id="detTitle" class="text-2xl font-extrabold text-indigo-950 mb-8 border-b border-gray-100 pb-4">Loading...</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start mb-8">
+                <div class="flex justify-center">
+                    <div id="detPoster" class="w-48 h-56 rounded-lg flex flex-col justify-between p-4 text-white text-center shadow relative overflow-hidden">
+                    </div>
+                </div>
+
+                <div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-4">
+                    <div>
+                        <h4 class="text-indigo-600 font-bold text-sm uppercase tracking-wider mb-1">Mentors:</h4>
+                        <p id="detMentors" class="text-gray-800 font-medium text-base"></p>
+                    </div>
+                    <div>
+                        <h4 class="text-indigo-600 font-bold text-sm uppercase tracking-wider mb-1">Co-Mentors:</h4>
+                        <p id="detCoMentors" class="text-gray-800 font-medium text-base"></p>
+                    </div>
+                    <div>
+                        <h4 class="text-indigo-600 font-bold text-sm uppercase tracking-wider mb-1">Mentees:</h4>
+                        <p id="detMentees" class="text-gray-800 font-medium text-base"></p>
+                    </div>
+                    <div>
+                        <h4 class="text-indigo-600 font-bold text-sm uppercase tracking-wider mb-1">General Category:</h4>
+                        <p id="detGenCat" class="text-gray-800 font-medium text-base"></p>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <h4 class="text-indigo-600 font-bold text-sm uppercase tracking-wider mb-1">Specific Category:</h4>
+                        <p id="detSpecCat" class="text-gray-800 font-medium text-base"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-8">
+                <button class="bg-[#6366F1] text-white px-6 py-2 rounded-lg font-medium text-sm flex items-center space-x-2 hover:bg-indigo-700 transition shadow">
+                    <i class="fa-solid fa-plus text-xs"></i> <span>Add To Wishlist</span>
+                </button>
+            </div>
+
+            <div class="space-y-6 border-t border-gray-100 pt-6">
+                <div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2 border-l-4 border-indigo-500 pl-3">Description</h3>
+                    <p id="detDesc" class="text-gray-600 text-sm leading-relaxed whitespace-pre-line bg-gray-50 p-4 rounded-xl border border-gray-100"></p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2 border-l-4 border-indigo-500 pl-3">Prerequisites</h3>
+                    <p id="detPrereq" class="text-red-700 font-mono text-xs bg-red-50 border border-red-100 p-4 rounded-xl"></p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2 border-l-4 border-indigo-500 pl-3">Timeline</h3>
+                    <div id="detTimeline" class="text-gray-700 text-sm leading-relaxed whitespace-pre-line font-sans bg-slate-50 p-5 rounded-xl border border-slate-200 shadow-inner"></div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        const projectData = {
+            "067": {
+                title: "Project ID: 067 The Tale of Destiny using kalman filter and reinforcement learning and AI and C++ and linear regression and nerual network",
+                mentors: "Venkat Suryaansh Thota (25b3952)",
+                coMentors: "Your Mom (25b6967)",
+                mentees: "Vivaan Bhatia (25b3906)",
+                genCat: "Theory of Management POR",
+                specCat: "How to be the best schoolmate/classmate/branchmate/degreemate/wingmate ever",
+                hasCustomImage: false,
+                posterClass: "from-slate-900 via-purple-950 to-indigo-950",
+                posterTag: "KALMAN & RL LORE",
+                posterColor: "text-purple-300",
+                desc: `This project provides yall with all the required resources to be the best management por ever. The story of how he evolved from bhondu sa nerdy sa bachchu to the OG no.1 management por.\n\nI'll show y'all everything from how to have beef with ADITYA JHA cuz he wanted to spend time w his gf to beefing with Manas Jagtap cuz he wanted to be CR to beefing with ISHAAN TULARA for absolutely no reason to beefing with PARAS cuz u wanted to kick him from the group. The most emotional and the Easiest person to ragebait. The smartest dude advice dene mai and the most retarded person in terms of Social senses. The number 1 chick magnet, the number 1 sweet talker and the OG poltu. He used to do polting before it was cool. And ofcourse, how could I forget... no.1 sugar daddy bro's favourite line is "Its okay we'll pay him".\n\nThe hands on experience part includes going on hangouts almost every day.. going out to hiranandani or an equivalent every fucking day. Convincing others to go ask out random girls literally anytime anywhere but the whole gang pussying out.. Paying 500 rupees for an empty cup of coke ... Sneaking into Kurla vaala IMAX a 1000 times till now... to bhaiya aapne hame chori karte hue nahi pakda to aapki galti hui na... To sneaking a panty onto Raj's room and blaming him for it. This man makes eevery hamgout 10 times better cuz of his shenanigans. I'm genuinely so so glad that someone as cool as you is so close to me. (I'm also secretly glad you fucked up advance cuz it made you so close to me).`,
+                timeline: `🗓️ 2018: I met this dude because he was in my 5th grade class. He was this bhondu sa nerd. Also one of my best friends in that class. I remember we used to hangout and cube during the breaks. He was class rank 1 and never went below 95% and I used to jump w joy cuz of my 70%..\n\n🗓️ 2019: He was in my class again... He was this crazy chick magnet(still hasnt changed).I still remember All my 6th grade bakchodi with Chaitanya and gang. The football during PT periods and shit.\n\n🗓️ 2020-2023: This faggot left my school during covid.\n\n🗓️ 2023: I go to his building cuz of one of my mutual friends I find out his friends call him BHAATU.... And I text him saying HIIII BHAATU, he was BAFFLED... he also tells me hes not doing JEE I was sad:(..\n\n🗓️ 2025: He introduces himself on the IITB freshers group Suhas made. He says hi guys im Vivaan bhatia from mumbai. I thought this cant be him lmao he said hes not doing jee. But I still DM him.(Shooting a shot from the moon)(0.1%chance).. And then he says yes he is. FUCK....crazy reunion The no. of things that had to go right for him to be in the same branch same program same wing just 2 rooms away from me. Literal soulmate string theory.\n\n🗓️ 2025.5: I have the absolute best semester with him.. Random hangouts with random people... XLR8 rank 13... our road being rigged... Us crying to srivathsa about this. The you and Aditya Jha beef.... Polting for you during cr elections. Every fucking thing with you was so cool bro. I had the best year in IITB because of you bro..\n\n🗓️ 2026: I had the best semester till now. The poker nights and evenings and afternoons and mornings.The random hangouts nC1 groups cuz of your discomfort and polting season lmfao.. Youve made everything so much better abhi tak And I love you so much for it.... Thank youu for everything. To the number pick for discussing any difficulty in my life and the number one difficulty in my life. Happy fucking birthday bro.`,
+                prerequisites: "Optiver intern + 9.999 cpi + TUB intern + Jane street PPO + JEE adv air < 1"
+            },
+            "069": {
+                title: "Project ID: 069 Bhaiya Please Make Me CR (BASIC ASS)",
+                mentors: "Nimay Shah (9227551010)",
+                coMentors: "Superficial Optimism and Overinflated sense of Self",
+                mentees: "Vivaan Bhatia",
+                genCat: "Absolute Brainrot and Ragebait",
+                specCat: "QuantPaglu's",
+                hasCustomImage: false,
+                posterClass: "from-amber-950 via-red-950 to-zinc-900",
+                posterTag: "CR LORE EDITION",
+                posterColor: "text-red-400",
+                desc: `This course involves a year full of randi rona, bakchodi and trying to be a so-called "good CR" that involves sucking a lot of dicks, not getting any chicks and also giving free pizza party to people. It starts by catching random people at random birthdays, sucking them for help, actually getting help, featuring them as a part of a campaign (WHICH WAS ACTUALLY OFC UNFAIR) and then actually turning out to be decent-ish (cz praising someone is never the norm).\n\nThe course is spread over 2 semesters, including a lot of challenges from the professors' side and for every fucking challenge, you just have to call or text and a solution will be provided to you which you blindly follow. It also involves an entity "MRUNAL" which is going to be a surprise game-changer and will add to the complexity of the tasks. It also features a wannabe co, who you'll be dumping almost all of your work and a so-called, self-planned movie night, that actually turned out to be decent unexpectedly.\n\nYou'll learn how to talk to professors, how to not bitch about your batchmates behind their backs, how to go to dmart to dress like females, how to become a twink in 30s, how to manage friendships, how to not worry about academics so much, and how to find the best mentor in the world (coz ofc bro). You'll also get a chance to talk to tanvi ma'am, and end up getting scolded by her. You also get a free ka resume point on Impulse which you did 0 work of, but more than everything you get the fame and the disrespect.\n\nHappy Birthday upcoming DD Quant Guy`,
+                timeline: `🍕 Semester 1.1) You get introduced to the DGSEC for the first time at a birthday party, and start by sucking him for a small photo in your poster which helps you win.\n\n🍕 Semester 1.2) You actually become the CR, and now you stop doing work. Although, you get a free gullu treat from the DGSEC and also tons of gyaan (lmao, I still remember how you had that whole fkn questionnaire and I was so creeped out 😂) and you also get a little fame into the department and the council coz your co does great work and you also do some good work, but are an expert at taking credit.\n\n🍕 Semester 2.1) Here's where things get crazy. You deal with hate for the first time, classmates se, and you get flabbergasted. On introspection, you finally learn your lesson and start becoming a better person. Enter MRUNAL, the love of your life and the chocolate in your room :), and here's when you learn how to look at the good things in your life and start staying happy. You co-found "MCHC", "dih" and "3s5r" and start actually making some of the best friends ever (although you have some diversion due to some characters), but become a more mature (hahahahahaha) person.\n\n🍕 Semester 2.2) The most fun part now, where you start getting infinite gossip, you dress up as a semi-twink and bowl the shit out with some epic seniors, and you also get the PORs, the Management POR that you are. But by the end of it, it's time to say goodbye and the course ends ;)\n\n(Note: This project never ends, I'll be in touch, and when you make it big, you get back to me and return all my investment in you)`,
+                prerequisites: "Absolute surrender to executive orders + willingness to supply free pizza slices + thick skin against department wide hate metrics."
+            },
+            "003": {
+                title: "Project ID: 003 The Great Vivaan (Beloved Nemesis)",
+                mentors: "Ishaan Tulara (25b1245)",
+                coMentors: "Paras's Academic Research Board",
+                mentees: "Vivaan Bhatia (The Nemesis)",
+                genCat: "Beloved Nemesis Lore",
+                specCat: "The Walking Paradox Tier",
+                hasCustomImage: false,
+                posterClass: "from-neutral-900 via-slate-950 to-indigo-950",
+                posterTag: "NEMESIS UNLOCKED",
+                posterColor: "text-indigo-300",
+                desc: `To my beloved nemesis, Happy Birthday. If I had to describe "The Great Vivaan" by his traits, it would look a little something like this:\n\n🍔 The Day-One Sugar Daddy: I’ll never forget how week one went down. I just wanted a treat, so I convinced everyone to assemble at Domino's. You ended up paying for the pizzas, basically buying the popular vote and bagging the CR title for yourself. I got my free food out of you, and that’s how this whole friendship started.\n\n🧠 The Walking Paradox (The Acad Weapon vs. The Menace): It’s actually annoying how you balance your shit. You’re the guy who pulls an AIR 63 in Mains (better than Rajit Gupta, btw), bags a 9.5+ CPI in the first sem despite doing pure bakchodi, and runs around as Quant Club Convenor and Racing Team Elec Trainee (I still don't value the last one, but fine). Yet, simultaneously, you’re an absolute menace doing the dumbest shit right by my side. We've sneaked into PVR ticketless for free movies, played endless hands of poker together, stalked the entire insti at 3 AM, and sat in each other's rooms gossiping about tea until sunrise.\n\n📱 The Oblivious Texter: You are notoriously bad at spatial awareness when your phone is out. You literally abandon us while buying drinks at Dhun because you’re too busy texting to even notice we aren't next to you. Your behavior literally inspired Paras’s dual-degree research paper: the “Theory of Management PORs.”\n\n🎯 The Ultimate Target for Rage-Bait: Whether it's our aimless weekly hangouts with the core retards group (half the time not even knowing where we're going) or me answering your calls just to ask what you're doing, you are my favorite person to annoy and rage-bait.`,
+                timeline: `💫 Sem 1 Build-Up: Started from barely talking in sem one to dynamic observations during week one's strategic pizza campaign.\n\n🔥 Sem 2 Peak Execution: Absolutely peaked! Going from structural boundaries to basically living in "katarias" or my room until 3 AM executing sleep-deprivation models.\n\n🚀 The Nemesis Mission Matrix: I might get jealous of your crazy achievements sometimes, and I call you my nemesis, but I know I still need to earn that title. I’m going to make sure I try to catch up to your shit and not fall too far behind. Wish you all the best in your future endeavors, Vivaan, mostly so you keep pushing me forward, too. We all love you. Happy Birthday bro!`,
+                prerequisites: "AIR 63 in Mains Frameworks + 9.5+ CPI Baseline Logic + Ghosting immunity index."
+            },
+            "004": { title: "Awaiting Project 4 Info", mentors: "TBD", coMentors: "TBD", mentees: "Vivaan Bhatia", genCat: "TBD", specCat: "TBD", posterClass: "from-teal-900 to-emerald-950", posterTag: "PROJECT 4", posterColor: "text-emerald-300", desc: "Send information to populate.", timeline: "TBD", prerequisites: "None" },
+            "005": { title: "Awaiting Project 5 Info", mentors: "TBD", coMentors: "TBD", mentees: "Vivaan Bhatia", genCat: "TBD", specCat: "TBD", posterClass: "from-orange-950 to-stone-900", posterTag: "PROJECT 5", posterColor: "text-orange-300", desc: "Send information to populate.", timeline: "TBD", prerequisites: "None" },
+            "006": { title: "Awaiting Project 6 Info", mentors: "TBD", coMentors: "TBD", mentees: "Vivaan Bhatia", genCat: "TBD", specCat: "TBD", posterClass: "from-fuchsia-950 to-slate-900", posterTag: "PROJECT 6", posterColor: "text-fuchsia-300", desc: "Send information to populate.", timeline: "TBD", prerequisites: "None" },
+            "007": { title: "Awaiting Project 7 Info", mentors: "TBD", coMentors: "TBD", mentees: "Vivaan Bhatia", genCat: "TBD", specCat: "TBD", posterClass: "from-violet-950 to-stone-900", posterTag: "PROJECT 7", posterColor: "text-violet-300", desc: "Send information to populate.", timeline: "TBD", prerequisites: "None" },
+            "008": { title: "Awaiting Project 8 Info", mentors: "TBD", coMentors: "TBD", mentees: "Vivaan Bhatia", genCat: "TBD", specCat: "TBD", posterClass: "from-emerald-950 to-neutral-900", posterTag: "PROJECT 8", posterColor: "text-emerald-300", desc: "Send information to populate.", timeline: "TBD", prerequisites: "None" },
+            "009": { title: "Awaiting Project 9 Info", mentors: "TBD", coMentors: "TBD", mentees: "Vivaan Bhatia", genCat: "TBD", specCat: "TBD", posterClass: "from-rose-950 to-zinc-900", posterTag: "PROJECT 9", posterColor: "text-rose-300", desc: "Send information to populate.", timeline: "TBD", prerequisites: "None" },
+            "010": { title: "Awaiting Project 10 Info", mentors: "TBD", coMentors: "TBD", mentees: "Vivaan Bhatia", genCat: "TBD", specCat: "TBD", posterClass: "from-blue-950 to-slate-900", posterTag: "PROJECT 10", posterColor: "text-indigo-300", desc: "Send information to populate.", timeline: "TBD", prerequisites: "None" }
+        };
+
+        function openProject(id) {
+            const data = projectData[id];
+            if (!data) return;
+            
+            document.getElementById('detTitle').innerText = data.title;
+            document.getElementById('detMentors').innerText = data.mentors;
+            document.getElementById('detCoMentors').innerText = data.coMentors;
+            document.getElementById('detMentees').innerText = data.mentees;
+            document.getElementById('detGenCat').innerText = data.genCat;
+            document.getElementById('detSpecCat').innerText = data.specCat;
+            document.getElementById('detDesc').innerText = data.desc;
+            document.getElementById('detPrereq').innerText = data.prerequisites;
+            document.getElementById('detTimeline').innerText = data.timeline;
+
+            const poster = document.getElementById('detPoster');
+            
+            poster.className = `w-48 h-56 bg-gradient-to-br ${data.posterClass} rounded-lg flex flex-col justify-between p-4 text-white text-center shadow relative overflow-hidden`;
+            poster.innerHTML = `
+                <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+                <span class="text-[10px] tracking-widest text-gray-300 font-bold z-10">SUMMER OF VIVAAN</span>
+                <div class="my-auto">
+                    <h3 class="text-xs font-black tracking-tight leading-tight ${data.posterColor}">${data.title.replace(/Project ID: \\d+\\s+/, '').substring(0, 35).toUpperCase()}...</h3>
+                    <p class="text-[9px] mt-2 text-gray-200">${data.posterTag}</p>
+                </div>
+                <span class="text-[8px] text-gray-400 font-mono">ID: ${id}</span>
+            `;
+
+            document.getElementById('dashboardView').classList.add('hidden');
+            document.getElementById('projectDetailView').classList.remove('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function closeProject() {
+            document.getElementById('projectDetailView').classList.add('hidden');
+            document.getElementById('dashboardView').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
